@@ -1,0 +1,45 @@
+1 CVPR的booktitle {Proceedings of 2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition}, 替换年份
+
+2 IEEE的出版社信息  IEEE不用花括号括起来 模板似乎帮我们处理了
+	publisher 	= {IEEE Computer Society},
+	address 	= {Piscataway, NJ, USA},
+	
+3 查不到editor就空着好了 不会影响item生成
+
+4 ACM的出版社信息
+	publisher   = {ACM},
+	address     = {New York, NY, USA},
+
+5 还在MIT出版社出版的NIPS
+	publisher   = {MIT Press},
+	address     = {Cambridge, MA, USA},
+	
+5 Springer的出版信息
+	publisher 	= {Springer-Verlag},
+	address 	= {Berlin Heidelberg},
+	
+6 NIPS等会议的出版信息
+  publisher = {Curran Associates, Inc.},
+  address   = {Red Hook, NY, USA},	
+	
+	
+6 techreport和inbook样式中note需要注释掉，否则不能编译
+
+7 CVPR的booktitle这样写 Proceedings of 2008{IEEE} Computer Society Conference on Computer Vision and Pattern Recognition
+
+--------------------
+以下为表格样式
+\begin{table}[htbp]
+\caption[短名字-列表目录用]{长名字-文中用}
+\label{Tab:章号:名字}
+\centering
+\begin{tabular}{cc}
+\toprule[1pt]
+  标题行 * & * \\
+\midrule[1pt]
+  数据行 * & * \\
+\bottomrule[1.5pt]
+\end{tabular}
+\end{table}
+
+插图的尺寸可用[width=0.15\textwidth]来确定

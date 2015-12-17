@@ -1,0 +1,85 @@
+@article{,
+	author 	= {},
+	title 	= {},
+	journal = {},
+	volume 	= {},
+	number 	= {},
+	year 	= {},
+	pages 	= {},
+	note  	= {}
+}
+
+@misc{,
+	title 	= {},
+	url 	= {}
+}
+
+@book{,
+	author 	  	= {},
+	title	  	= {},
+    edition   	= {},
+	publisher 	= {},
+	address		= {},
+	year 		= {},
+	note 		= {}
+}
+
+@inproceedings{,
+	author 		= {},
+	title 		= {},
+	editor    	= {},
+	booktitle 	= {},
+	year 		= {},
+	pages 		= {},
+	publisher 	= {},
+	address 	= {},
+	note		= {}
+}
+
+@techreport{,
+	author 	    = {},
+	title 	    = {},
+	institution = {},
+	year		= {},
+%	note		= {}
+}
+
+@mastersthesis{,
+	author 		= {},
+	title 		= {},
+	address 	= {},
+	school 		= {},
+	year 		= {},
+	note		= {}
+}
+
+@phdthesis{,
+	author 		= {},
+	title 		= {},
+	address 	= {},
+	school 		= {},
+	year 		= {},
+	note		= {}
+}
+
+@misc{,
+	title		= {},
+	url 		= {}
+}
+
+@inbook{,
+	booktitle	= {},
+	series		= {},
+	title		= {},
+	author		= {},
+	editor		= {},
+	volume      = {},
+	year		= {},
+	pages		= {},
+	address 	= {},
+	publisher	= {},
+	note		= {}
+}
+
+
+

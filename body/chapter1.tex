@@ -1,0 +1,48 @@
+% !Mode:: "TeX:UTF-8"
+% 这个是为了WinEdt设置的，它的默认不是UTF8.
+% !TeX root = ../main.tex
+% 若xelatex编译非UTF8文件，需在每个文件中指定字符编码;
+% main.tex中手动制定了\atemp和\usewhat参数；
+\ifx\atempxetex\usewhat
+%\XeTeXinputencoding "gbk"
+\fi
+
+\defaultfont
+
+\titleformat{\chapter}[hang]{\xiaosan\bf\raggedright\hei\sf\boldmath}{\xiaoer\chaptertitlename}{18pt}{\xiaosan}
+\titlespacing{\chapter}{0pt}{8pt}{16pt}
+
+\makeatletter
+\newskip\@footindent
+\@footindent=1em
+
+\renewcommand\footnoterule{\kern-3\p@ \hrule width 0.4\columnwidth \kern 2.6\p@}
+\@addtoreset{footnote}{page}
+
+\long\def\@makefntext#1{\@setpar{\@@par\@tempdima \hsize
+\advance\@tempdima-\@footindent
+\parshape \@ne \@footindent \@tempdima}\par
+\noindent \hbox to \z@{\hss\@thefnmark\hspace{0.5em}}#1}
+
+\renewcommand\thefootnote{\pinumber{\arabic{footnote}}}
+\def\@makefnmark{\hbox{\textsuperscript{\@thefnmark}}}
+
+\newcommand\pinumber[1]{\ifcase#1 \or \ding{172}\or \ding{173}\or
+  \ding{174}\or \ding{175}\or \ding{176}\or \ding{177}%
+  \or \ding{178}\or \ding{179}\or \ding{180}\or \ding{181}\else *\fi\relax}
+\makeatother
+%以上从\makeatletter到\makeatother为重定义脚注编号,使之带圆圈
+
+\BiChapter{绪论}{Introduction}
+\label{cha1:Introduction}
+
+\BiSection{研究背景}{Background} %此处的第二个{}内是用于填入英语标题，南理工没要求，所以空着，但不要删除它，下同。
+\label{sec11:Background}
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXxxxx
+
+XXXXXXxx \cite{psychology_recognition_87}
+
+
